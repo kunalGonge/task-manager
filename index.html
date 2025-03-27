@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <div id="auth-container">
+      <button id="login-button">Login with Google</button>
+      <button id="logout-button" style="display:none;">Logout</button>
+    </div>
+
+    <div id="task-container" style="display:none;">
+      <input type="text" id="task-input" placeholder="Add a task">
+      <button id="add-task-button">Add Task</button>
+
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
